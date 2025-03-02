@@ -18,7 +18,8 @@ export default [
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
-    'plugin:import/typescript'
+    'plugin:import/typescript',
+    'plugin:prettier/recommended'
   ),
   {
     languageOptions: {
@@ -50,6 +51,7 @@ export default [
     },
     rules: {
       'react/react-in-jsx-scope': 'off',
+      'prettier/prettier': ['error', {}, { usePrettierrc: true }],
       'import/no-internal-modules': [
         'error',
         {
